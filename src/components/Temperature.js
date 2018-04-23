@@ -8,7 +8,7 @@ class Temperature extends Component {
   render() {
     return (
     <div>
-        <h2> {this.props.temperature + ' ℃'} </h2>
+        <h2> {this.props.currentTemperature + ' ℃'} </h2>
     </div>
     );
   }
