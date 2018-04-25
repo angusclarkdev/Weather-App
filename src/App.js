@@ -10,7 +10,7 @@ import City from './components/City';
 import Widget from './components/Widget';
 import Temp from './components/Temperature';
 import Time from './components/Time';
-import Forecast from './components/Forecast';
+import Forecast from './components/Forecast/Forecast';
 import Footer from './components/Footer';
 
 export default class App extends Component {
@@ -18,7 +18,7 @@ export default class App extends Component {
       super(props);
 
 
-        this.state = {name:  "loading...", city: "", country: "", days: []};
+        this.state = {name:  "loading...", city: "", country: "", hours: []};
 
 // Current weather API address + API key
         this.currentWeatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=eb0141d1caa1cb34b0f543fa58265964&units=metric';
@@ -45,13 +45,14 @@ this.location = 'London,Uk';
            currentTemperature: Math.round(current.data.main.temp), //rounded to display as 2 digits
            id: current.data.weather[0].id,
         // 5 day forecast
-        days: [
-           {day: 1, temp: list[6].main.temp},
-           {day: 2, temp: list[14].main.temp},
-           {day: 3, temp: list[22].main.temp},
-           {day: 4, temp: list[30].main.temp},
-           {day: 5, temp: list[38].main.temp}
+        hours: [
+           {hour: 3, temp: list[1].main.temp, text: "+ 3 hours", id: list[1].weather[0].id},
+           {hour: 6, temp: list[2].main.temp, text: "+ 6 hours", id: list[2].weather[0].id},
+           {hour: 9, temp: list[3].main.temp, text: "+ 9 hours", id: list[3].weather[0].id},
+           {hour: 12, temp: list[4].main.temp,text: "+ 12 hours",id: list[4].weather[0].id},
+
          ],
+
          })
 
 
@@ -87,12 +88,12 @@ axios.all([this.getCurrentWeather(), this.getForecast()])
         currentTemperature: Math.round(current.data.main.temp), //rounded to display as 2 digits
         id: current.data.weather[0].id,
      // 5 day forecast
-     days: [
-       {day: 1, temp: list[6].main.temp},
-       {day: 2, temp: list[14].main.temp},
-       {day: 3, temp: list[22].main.temp},
-       {day: 4, temp: list[30].main.temp},
-       {day: 5, temp: list[38].main.temp}
+     hours: [
+        {hour: 3, temp: list[1].main.temp, text: "+ 3 hours", id: list[1].weather[0].id},
+        {hour: 6, temp: list[2].main.temp, text: "+ 6 hours", id: list[2].weather[0].id},
+        {hour: 9, temp: list[3].main.temp, text: "+ 9 hours", id: list[3].weather[0].id},
+        {hour: 12, temp: list[4].main.temp,text: "+ 12 hours",id: list[4].weather[0].id},
+
       ],
       })
 }))
@@ -102,15 +103,15 @@ axios.all([this.getCurrentWeather(), this.getForecast()])
 
     return (
 
-    <div className="container">
+    <section className="container">
       <UserInput value={this.state.value} onChange={this.handleChange} onSubmit={this.handleSubmit} />
     <City name={this.state.name} />
     <Widget iconId={this.state.id} />
     <Temp currentTemperature={this.state.currentTemperature} />
     <Time text={this.state.text}/>
-    <Forecast days={this.state.days} names={this.state.names} />
+    <Forecast hours={this.state.hours} text={this.state.text} />
     <Footer />
-    </div>
+  </section>
     );
   }
 }
