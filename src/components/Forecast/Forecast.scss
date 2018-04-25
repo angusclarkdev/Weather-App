@@ -1,0 +1,18 @@
+.forecast {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 15%;
+  i {
+    font-size: 45px;
+    margin-bottom: 1rem;
+  }
+  li {
+    list-style: none;
+  }
+  .sml_temperature {
+    
+  }
+}

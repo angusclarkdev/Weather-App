@@ -7,7 +7,7 @@ import '../css/components/Widget.css'
 const Widget = (props) => {
 
     return (
-    <div>
+    <div className="widget">
       <i className={"wi wi-owm-" + props.iconId}> </i>
     </div>
     );
