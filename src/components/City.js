@@ -9,7 +9,7 @@ const City = (props) =>  {
     return (
 
     <div className="city">
-      <h1> {props.name} </h1>
+      <h1 title={"Name of City"}> {props.name} </h1>
     </div>
     );
   }

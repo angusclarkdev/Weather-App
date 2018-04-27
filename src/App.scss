@@ -1,6 +1,8 @@
 html {
   font-size: 16px;
   font-family: "Assistant", sans-serif;
+  background-color: #E5D7B4;
+  overflow: hidden;
 }
   body {
   color: white;
@@ -9,9 +11,10 @@ html {
   margin-top: 5%;
   text-align: center;
   width: 70%;
-  margin-left: 15%;
+  margin: 3.5rem auto;
   background-color: #004C99;
   padding: 2rem;
+  border-radius: 10px;
  }
  p {
    font-size: 1.2rem;

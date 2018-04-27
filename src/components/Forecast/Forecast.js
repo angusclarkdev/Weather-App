@@ -8,7 +8,7 @@ const Forecast = (props) =>  {
 //console.log(props.days);
 const listItems = props.hours.map(hour => {
   //return <li> {day} </li>
-  return <div key={hour.hour}> <p> {hour.text} </p> <i className={"wi wi-owm-" + hour.id}> </i> <li className="sml_temperature"> {hour.temp + ' ℃'} </li> </div>
+  return <div key={hour.hour}> <p title={"+3,+6,+9,+12 hours"}> {hour.text} </p> <i className={"wi wi-owm-" + hour.id}> </i> <li className="sml_temperature" title={"Forecast temperature"}> {hour.temp + ' ℃'} </li> </div>
 })
 
 return (

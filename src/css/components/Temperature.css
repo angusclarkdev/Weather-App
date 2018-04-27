@@ -1,6 +1,7 @@
 .temperature h2 {
   font-weight: normal;
   font-size: 2rem;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  cursor: default; }
 
 /*# sourceMappingURL=Temperature.css.map */

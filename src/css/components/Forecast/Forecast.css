@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-around;
   width: 70%;
-  margin-left: 15%; }
+  margin-left: 15%;
+  cursor: default; }
   .forecast i {
     font-size: 45px;
     margin-bottom: 1rem; }

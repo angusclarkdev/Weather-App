@@ -18,7 +18,7 @@ export default class App extends Component {
       super(props);
 
 
-        this.state = {name:  "loading...", city: "", country: "", id: "200", hours: []};
+        this.state = {name:  "loading...", city: "", currentTemperature: "", country: "", id: "200", hours: []};
 
 // Current weather API address + API key
         this.currentWeatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=eb0141d1caa1cb34b0f543fa58265964&units=metric';
