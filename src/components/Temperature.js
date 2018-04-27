@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // local imports
 import '../css/components/Temperature.css'
 
-class Temperature extends Component {
+const Temperature = (props) => {
 
-  render() {
     return (
     <div className="temperature">
-        <h2 title={"Current temperature"}> {this.props.currentTemperature + ' ℃'} </h2>
+        <h2 title={"Current temperature"}> {props.currentTemperature + ' ℃'} </h2>
     </div>
     );
   }
-}
 
 export default Temperature;
