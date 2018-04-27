@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGE,qBAAM;EACN,MAAM,EAAE,MAAM",
+"mappings": "AAGE,qBAAM;EACN,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,IAAI;AAEjB,uBAAQ;EACN,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,OAAO",
 "sources": ["../../components/UserInput.scss"],
 "names": [],
 "file": "UserInput.css"

@@ -3,10 +3,11 @@
 
   input {
   margin: 0 1rem;
-  
+  font-weight: bold;
     }
-    button {
-
-    }
+  .submit {
+    font-weight: normal;
+    cursor: pointer;
+  }
   }
 }
