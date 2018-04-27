@@ -56,12 +56,12 @@ export default class App extends Component {
            currentTemperature: Math.round(current.data.main.temp), //rounded to display as 2 digits
            id: current.data.weather[0].id,
 
-          // 5 day forecast
+          // 5 day forecast, temperature rounded 
           hours: [
-            {hour: 3, temp: list[1].main.temp, text: "+ 3 hours", id: list[1].weather[0].id},
-            {hour: 6, temp: list[2].main.temp, text: "+ 6 hours", id: list[2].weather[0].id},
-            {hour: 9, temp: list[3].main.temp, text: "+ 9 hours", id: list[3].weather[0].id},
-            {hour: 12, temp: list[4].main.temp,text: "+ 12 hours",id: list[4].weather[0].id},
+            {hour: 3, temp: Math.round(list[1].main.temp), text: "+ 3 hours", id: list[1].weather[0].id},
+            {hour: 6, temp: Math.round(list[2].main.temp), text: "+ 6 hours", id: list[2].weather[0].id},
+            {hour: 9, temp: Math.round(list[3].main.temp), text: "+ 9 hours", id: list[3].weather[0].id},
+            {hour: 12, temp: Math.round(list[4].main.temp),text: "+ 12 hours",id: list[4].weather[0].id},
           ]
        })
 }))
