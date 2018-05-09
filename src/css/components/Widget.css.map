@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACE,SAAE;EACF,WAAW,EAAE,iBAAiB;EAC9B,SAAS,EAAE,KAAK",
-"sources": ["../../components/Widget.scss"],
-"names": [],
-"file": "Widget.css"
-}

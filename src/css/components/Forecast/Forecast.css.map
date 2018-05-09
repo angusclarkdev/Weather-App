@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAU;EACR,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,OAAO;EACf,WAAE;IACA,WAAW,EAAE,iBAAiB;IAC9B,SAAS,EAAE,IAAI;IACf,aAAa,EAAE,IAAI;EAErB,YAAG;IACD,UAAU,EAAE,IAAI",
-"sources": ["../../../components/Forecast/Forecast.scss"],
-"names": [],
-"file": "Forecast.css"
-}
